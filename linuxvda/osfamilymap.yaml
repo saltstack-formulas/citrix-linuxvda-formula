@@ -20,7 +20,8 @@ RedHat:
   src_pkg: LinuxVDA-1811.el7_x.rpm
   src_hash: sha256=80a995c2c4a042fd57092b8a5bc69f3d50c0ec8a468d1edc817789eff480dfac
   pkgs:
-    -  pulseaudio
+    - pulseaudio
+    - sssd-libwbclient
   xdping:
     package: linux-xdping/RHEL/xdping-7.13.1-0.x86_64.rpm
 
