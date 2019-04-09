@@ -68,6 +68,7 @@ linuxvda_config_setup:
       CTX_XDL_HDX_3D_PRO: {{ linuxvda.citrix.variables.CTX_XDL_HDX_3D_PRO }}
       CTX_XDL_VDI_MODE: {{ linuxvda.citrix.variables.CTX_XDL_VDI_MODE }}
       CTX_XDL_START_SERVICE: {{ linuxvda.citrix.variables.CTX_XDL_START_SERVICE }}
+      CTX_XDL_FAS_LIST: {{ linuxvda.citrix.variables.CTX_XDL_FAS_LIST }}
   cmd.run:
     - name: {{ linuxvda.dl.tmpdir }}/vdasetup.sh
     - require:

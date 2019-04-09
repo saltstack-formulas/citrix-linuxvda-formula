@@ -5,18 +5,17 @@ linuxvda:
   # If salt sets bad fqdn in /etc/hosts, the set domain here to fix things.
   #domain: example.com
 
-    #####Formula default is version 1811 (previous was 7.16)####
      {%- if grains.os_family == 'RedHat' %}
-  #src_pkg: XenDesktopVDA-7.16.0.412-1.el7_x.x86_64.rpm
-  #src_hash: sha256=8b75157869fda9db2a8bebeffee75619fcda4d9dcadac62f013d4f89a7a6ffe6
+  src_pkg: XenDesktopVDA-7.16.0.412-1.el7_x.x86_64.rpm
+  src_hash: sha256=8b75157869fda9db2a8bebeffee75619fcda4d9dcadac62f013d4f89a7a6ffe6
 
      {%- elif grains.os_family == 'Suse' %}
-  #src_pkg: 'XenDesktopVDA-7.16.0.412-1.sle12_x.x86_64.rpm'
-  #src_hash: 'sha256=57bd03ee4a01cce9a01571eba668b0dcc34787a9f7a4b8a637696172860206f7'
+  src_pkg: 'XenDesktopVDA-7.16.0.412-1.sle12_x.x86_64.rpm'
+  src_hash: 'sha256=57bd03ee4a01cce9a01571eba668b0dcc34787a9f7a4b8a637696172860206f7'
 
      {%- elif grains.os == 'Ubuntu' %}
-  #src_pkg': 'xendesktopvda_7.16.0.412-1.ubuntu16.04_amd64.deb'
-  #src_hash': 'fc48ad39be54cae0034e9302908aa146'
+  src_pkg: 'xendesktopvda_7.16.0.412-1.ubuntu16.04_amd64.deb'
+  src_hash: 'fc48ad39be54cae0034e9302908aa146'
 
      {%- endif %}
   citrix:
